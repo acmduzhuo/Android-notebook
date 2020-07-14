@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.NoteBook.notepal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_realstyle"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_realstyle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.android.NoteBook.notepal.MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.NoteBook.notepal.controller.AddActivity"
+            android:label="添加新记录">
+        </activity>
+        <activity
+            android:name="com.android.NoteBook.notepal.controller.UpdateActivity"
+            android:label="查看更改记录">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
